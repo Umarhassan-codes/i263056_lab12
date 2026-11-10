@@ -5,61 +5,58 @@
   Theme: Dhaba Menu
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chai Corner - Home</title>
+    <title>Chai Corner Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">Chai <span>Corner</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
 
-    <main class="container">
-        <section class="hero">
-            <h1 class="page-title">Welcome to Chai Corner</h1>
-            <p class="subtitle">Experience authentic dhaba tea and crispy snacks, brewed with passion.</p>
-            <img class="hero-img" src="Chai.jpg" alt="Chai Menu Image">
-            <p>Freshly brewed Karak Chai served hot in traditional kulhad cups.</p>
-            <button class="btn" onclick="orderChai()">Order Chai Now</button>
-        </section>
+    <h1>Chai Corner Menu</h1>
+    <img class="hero-img" src="Chai.jpg" alt="Chai Menu Image">
 
-        <section class="grid">
-            <div class="card">
-                <h3>☕ Traditional Brew</h3>
-                <p>Boiled slowly over low flames for that deep, rich dhaba flavor.</p>
-            </div>
-            <div class="card">
-                <h3>🌿 Organic Spices</h3>
-                <p>Infused with crushed green cardamom, cinnamon, and fresh ginger.</p>
-            </div>
-            <div class="card">
-                <h3>🥐 Fresh Snacks</h3>
-                <p>Crispy samosas, pakoras, and parathas served fresh all day.</p>
-            </div>
-        </section>
-    </main>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Item Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Beverages</td>
+            <td>Karak Chai</td>
+            <td>Strong brewed tea</td>
+            <td>Rs. 120</td>
+        </tr>
+        <tr>
+            <td>Beverages</td>
+            <td>Elaichi Chai</td>
+            <td>Cardamom tea</td>
+            <td>Rs. 150</td>
+        </tr>
+        <tr>
+            <td>Snacks</td>
+            <td>Samosa Platter</td>
+            <td>Two crispy samosas</td>
+            <td>Rs. 180</td>
+        </tr>
+    </table>
 
-    <footer>
-        <p>&copy; 2026 Chai Corner | Umar Hassan (i263056 - Section B)</p>
-    </footer>
+    <button onclick="orderChai()">Order</button>
 
     <script>
         function orderChai() {
-            console.log("Order button clicked on Home Page");
-            window.alert("Your Karak Chai order has been placed!");
+            console.log("Order button clicked");
+            window.alert("Your order has been placed!");
         }
     </script>
 

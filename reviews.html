@@ -1,0 +1,83 @@
+<!-- 
+  Student Name: Umar Hassan
+  Roll Number: i263056
+  Section: B
+  Theme: Dhaba Menu
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chai Corner - Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="reviews.html" class="active">Reviews</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <h1>Customer Reviews</h1>
+    <img class="hero-img" src="Chai.jpg" alt="Chai Menu Image">
+
+    <div id="reviewsContainer">
+        <div class="review-item">
+            <span class="reviewer">Ali Ahmed</span>
+            <span class="stars">★★★★★</span>
+            <p>Best Karak Chai in town! Very strong and fresh taste.</p>
+        </div>
+
+        <div class="review-item">
+            <span class="reviewer">Sara Khan</span>
+            <span class="stars">★★★★★</span>
+            <p>Loved the samosa platter with Elaichi chai!</p>
+        </div>
+    </div>
+
+    <br>
+    <h2>Add Your Review</h2>
+    <div class="form-box">
+        <form onsubmit="event.preventDefault(); addReview();">
+            <label for="revName">Name:</label>
+            <input type="text" id="revName" required>
+
+            <label for="revRating">Rating:</label>
+            <select id="revRating" required>
+                <option value="★★★★★">★★★★★ (5 Stars)</option>
+                <option value="★★★★☆">★★★★☆ (4 Stars)</option>
+                <option value="★★★☆☆">★★★☆☆ (3 Stars)</option>
+            </select>
+
+            <label for="revComment">Review:</label>
+            <textarea id="revComment" rows="4" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+    <script>
+        function addReview() {
+            var name = document.getElementById("revName").value;
+            var rating = document.getElementById("revRating").value;
+            var comment = document.getElementById("revComment").value;
+
+            var newDiv = document.createElement("div");
+            newDiv.className = "review-item";
+            newDiv.innerHTML = '<span class="reviewer">' + name + '</span><span class="stars">' + rating + '</span><p>' + comment + '</p>';
+
+            document.getElementById("reviewsContainer").appendChild(newDiv);
+
+            console.log("Review submitted by " + name);
+            window.alert("Thank you! Your review has been added.");
+
+            document.getElementById("revName").value = "";
+            document.getElementById("revComment").value = "";
+        }
+    </script>
+
+</body>
+</html>

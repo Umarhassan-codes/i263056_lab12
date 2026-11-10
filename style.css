@@ -1,8 +1,8 @@
 /* 
-  Student Name:Umar Hassan
+  Student Name: Umar Hassan
   Roll Number: i263056
   Section: B
-  Theme Dhaba Menu
+  Theme: Dhaba Menu
 */
 
 body {
@@ -10,6 +10,7 @@ body {
     text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
+    margin: 0;
 }
 
 h1 {
@@ -22,6 +23,27 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Navigation Bar */
+.navbar {
+    background-color: #8b0000;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #d2691e;
+    text-decoration: underline;
+}
+
+/* Table Styling */
 table {
     width: 80%;
     margin: 0 auto 20px auto;
@@ -30,7 +52,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #black;
+    border: 1px solid black;
     padding: 10px;
 }
 
@@ -39,6 +61,7 @@ th {
     color: white;
 }
 
+/* Buttons */
 button {
     background-color: #d2691e;
     color: white;
@@ -46,8 +69,51 @@ button {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #8b0000;
+}
+
+/* Form Container */
+.form-box {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.form-box label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.form-box input, .form-box textarea, .form-box select {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Reviews Box */
+.review-item {
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #d2691e;
+    text-align: left;
+}
+
+.reviewer {
+    font-weight: bold;
+    color: #8b0000;
+}
+
+.stars {
+    color: #d2691e;
+    float: right;
 }
