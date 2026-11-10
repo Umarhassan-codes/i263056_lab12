@@ -1,0 +1,96 @@
+<!-- 
+  Student Name: Umar Hassan
+  Roll Number: i263056
+  Section: B
+  Theme: Dhaba Menu
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Corner - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Chai <span>Corner</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Our Menu</h1>
+        <p class="subtitle">Explore our variety of brewed teas and fresh dhabba snacks</p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Item Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beverages</td>
+                        <td>Karak Chai</td>
+                        <td>Strong brewed tea</td>
+                        <td class="price">Rs. 120</td>
+                    </tr>
+                    <tr>
+                        <td>Beverages</td>
+                        <td>Elaichi Chai</td>
+                        <td>Cardamom infused tea</td>
+                        <td class="price">Rs. 150</td>
+                    </tr>
+                    <tr>
+                        <td>Beverages</td>
+                        <td>Doodh Patti</td>
+                        <td>Rich milk tea boiled with slow heat</td>
+                        <td class="price">Rs. 180</td>
+                    </tr>
+                    <tr>
+                        <td>Snacks</td>
+                        <td>Samosa Platter</td>
+                        <td>Two crispy samosas with chutney</td>
+                        <td class="price">Rs. 180</td>
+                    </tr>
+                    <tr>
+                        <td>Snacks</td>
+                        <td>Aloo Paratha</td>
+                        <td>Spiced potato flatbread with fresh butter</td>
+                        <td class="price">Rs. 220</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <button class="btn" onclick="orderCombo()">Order Special Combo</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chai Corner | Umar Hassan (i263056 - Section B)</p>
+    </footer>
+
+    <script>
+        function orderCombo() {
+            console.log("Combo order placed from menu page");
+            window.alert("Special Combo (Karak Chai + Samosa Platter) ordered successfully!");
+        }
+    </script>
+
+</body>
+</html>
