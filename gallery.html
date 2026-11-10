@@ -1,0 +1,66 @@
+<!-- 
+  Student Name: Umar Hassan
+  Roll Number: i263056
+  Section: B
+  Theme: Dhaba Menu
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Corner - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Chai <span>Corner</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Photo Gallery</h1>
+        <p class="subtitle">A glimpse into our signature chai and cozy dhaba setup</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="Chai.jpg" alt="Kulhad Chai">
+                <p>Authentic Clay Pot Kulhad Chai</p>
+            </div>
+            <div class="gallery-card">
+                <img src="Chai.jpg" alt="Special Karak Tea">
+                <p>Steaming Hot Karak Tea</p>
+            </div>
+            <div class="gallery-card">
+                <img src="Chai.jpg" alt="Cardamom Tea">
+                <p>Fresh Cardamom Elaichi Chai</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <button class="btn" onclick="viewGalleryInfo()">Explore Gallery Details</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chai Corner | Umar Hassan (i263056 - Section B)</p>
+    </footer>
+
+    <script>
+        function viewGalleryInfo() {
+            console.log("Gallery view action triggered");
+            window.alert("All pictures feature fresh items prepared daily at Chai Corner!");
+        }
+    </script>
+
+</body>
+</html>
